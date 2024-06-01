@@ -1,19 +1,17 @@
 FreeBirdSavedMusic = "Interface\\AddOns\\FreeBird\\freebird.mp3"
 
-local Falling
 local function freeBird_Loop()
-    if IsFalling() == false then
+    if IsFalling() then
+        C_Timer.After(0.5, freeBird_Loop)
+    else
         StopMusic()
-        Falling = false
     end
-    if Falling then C_Timer.After(0.5, freeBird_Loop) end
 end
 
 local AuraInstanceID
 local function testFalling()
     if IsFalling() then
         PlayMusic(FreeBirdSavedMusic)
-        Falling = true
         freeBird_Loop()
     end
 end
