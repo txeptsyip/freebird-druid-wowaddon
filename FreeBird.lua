@@ -19,7 +19,7 @@ end
 local function freeBird_onEvent(self, event, unit, info)
     if info.addedAuras then
         for _, v in pairs(info.addedAuras) do
-            if v.spellId == 40120 then -- cata swift flight form
+            if v.spellId == 40120 or v.spellId == 33943 then -- cata swift flight form
                 AuraInstanceID = v.auraInstanceID
                 StopMusic()
                 break
