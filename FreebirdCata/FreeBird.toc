@@ -1,0 +1,7 @@
+## Interface: 40400
+## Title: FreeBird
+## Author: Txeptsyip
+## Version: 2
+## SavedVariables: FreeBirdSavedMusic
+
+FreeBird.lua
