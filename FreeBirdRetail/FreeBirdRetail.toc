@@ -1,7 +1,7 @@
-## Interface: 40400
-## Title: FreeBird
+## Interface: 1000207
+## Title: FreeBirdRetail
 ## Author: Txeptsyip
-## Version: 2
+## Version: 2.1
 ## SavedVariables: FreeBirdSavedMusic
 
 FreeBird.lua
